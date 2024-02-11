@@ -9,7 +9,6 @@ import PasswordInput from './PasswordInput';
 function SignInForm(): JSX.Element {
   const [email, setEmail] = useState('');
   const [username, setUsername] = useState('');
-  const [phoneNumber, setPhoneNumber] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
 
@@ -27,10 +26,6 @@ function SignInForm(): JSX.Element {
 
   const validateForm = (): boolean => {
     let isValid = true;
-    // if (password !== confirmPassword) {
-    //   setError('Passwords do not match!');
-    //   isValid = false;
-    // }
     // TODO: Add more validation logic
     // TODO: Add validation for email exist in db etc
     return isValid;
