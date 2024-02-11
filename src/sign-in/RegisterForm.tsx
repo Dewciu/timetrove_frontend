@@ -6,7 +6,7 @@ import PasswordInput from './PasswordInput';
 // TODO: Think about splitting this form into smaller components
 // TODO: Then add address component, phone number component etc
 
-function SignInForm(): JSX.Element {
+function RegisterForm(): JSX.Element {
   const [email, setEmail] = useState('');
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
@@ -44,4 +44,4 @@ function SignInForm(): JSX.Element {
   );
 }
 
-export default SignInForm;
+export default RegisterForm;
