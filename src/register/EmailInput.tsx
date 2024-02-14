@@ -8,7 +8,7 @@ function EmailInput({ onEmailChange }: EmailInputProps) {
   const [error, setError] = useState('');
   const validate = (email: string) => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (email != '' && !emailRegex.test(email)) {
+    if (email !== '' && !emailRegex.test(email)) {
       setError('Invalid email! Please enter a valid email.');
     } else {
       setError('');

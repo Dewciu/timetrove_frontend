@@ -3,7 +3,6 @@ import UsernameInput from './UsernameInput';
 import EmailInput from './EmailInput';
 import PasswordInput from './PasswordInput';
 
-// TODO: Think about splitting this form into smaller components
 // TODO: Then add address component, phone number component etc
 
 function RegisterForm(): JSX.Element {

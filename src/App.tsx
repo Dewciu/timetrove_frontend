@@ -1,11 +1,13 @@
-import RegisterForm from './sign-in/RegisterForm';
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import RegisterForm from './register/RegisterForm';
+import Layout from './Layout';
+import routes from './routes/routes';
 
 function App() {
-  return (
-    <div className="App">
-      <RegisterForm />
-    </div>
-  );
+  const router = createBrowserRouter([
+    { element: <Layout />, children: routes },
+  ]);
+  return <RouterProvider router={router} />;
 }
 
 export default App;
